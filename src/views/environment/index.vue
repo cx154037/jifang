@@ -13,8 +13,9 @@
       <div class="list-item">
         <div class="items-stretch">
           <div class="item" v-for="(item,key) in IOS" :key="key">
-            <div class="left">{{item.sigName}}</div>
-            <div class="right">告警</div>
+             <div class="left">{{item.sigName}}</div>
+             <div class="right" v-if="item.id===1439||item.id===1440||item.id===1441||item.id===1443||item.id===1443||item.id===1446||item.id===1448||item.id===1451||item.id===1452||item.id===1454||item.id===1455||item.id===1456">{{((item.id===1439||item.id===1440||item.id===1441||item.id===1443||item.id===1443||item.id===1446||item.id===1450||item.id===1451||item.id===1452||item.id===1448)&&item.value===1)?'打开':"关闭"}}</div>
+             <div class="right" v-if="item.id===1442||item.id===1447||item.id===1449||item.id===1450||item.id===1453||item.id===1457">{{item.value==1?'告警':"正常"}}</div>
           </div>
         </div>
       </div>
