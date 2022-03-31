@@ -64,7 +64,6 @@ export default {
       this.IOS = IO.filter((item) => {
         return item.sigName !== "预留";
       });
-      console.log(this.IOS)
     });
   },
 };

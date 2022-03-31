@@ -8,7 +8,7 @@
         <div class="c-item-two-left-top">
           <div class="title">u位使用率</div>
           <div>
-              12
+              <shiYong></shiYong>
           </div>
         </div>
         <div class="c-item-two-left-two">
@@ -25,10 +25,14 @@
   </div>
 </template>
 <script>
+import shiYong from '@/components/Shiyong/index'
 export default {
   data() {
     return {};
   },
+  components:{
+    shiYong
+  }
 };
 </script>
 <style lang="scss" scoped>
